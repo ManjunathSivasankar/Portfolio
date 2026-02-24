@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-nav">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <button onClick={() => scrollTo("hero")} className="font-display text-lg font-semibold tracking-tight text-foreground">
+        <button onClick={() => scrollTo("hero")} className="font-display text-lg font-semibold tracking-tight text-foreground bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700">
           Portfolio
         </button>
 
@@ -37,8 +37,8 @@ export default function Navbar() {
                 onClick={() => scrollTo(item.id)}
                 className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300 ${
                   active === item.id
-                    ? "bg-primary/10 text-primary"
-                    : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                    ? "bg-black/10 text-black"
+                    : "text-muted-foreground hover:text-foreground hover:bg-gray-200/50"
                 }`}
               >
                 {item.label}
@@ -63,8 +63,8 @@ export default function Navbar() {
                   onClick={() => scrollTo(item.id)}
                   className={`w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all ${
                     active === item.id
-                      ? "bg-primary/10 text-primary"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                      ? "bg-black/10 text-black"
+                      : "text-muted-foreground hover:text-foreground hover:bg-gray-100"
                   }`}
                 >
                   {item.label}

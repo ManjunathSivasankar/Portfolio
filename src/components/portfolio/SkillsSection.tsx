@@ -24,7 +24,7 @@ export default function SkillsSection() {
     <section id="skills" className="section-padding">
       <div className="max-w-6xl mx-auto">
         <RevealSection>
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">Skills</p>
+          <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700 mb-4">Skills</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-16 text-foreground">
             Tools of the trade.
           </h2>
@@ -34,13 +34,13 @@ export default function SkillsSection() {
           {categories.map((cat, ci) => (
             <RevealSection key={cat.title} delay={ci * 100}>
               <div className="mb-6 flex items-center gap-3">
-                <cat.icon size={18} className="text-primary" />
+                <cat.icon size={18} className="text-black" />
                 <h3 className="font-display text-lg font-semibold text-foreground">{cat.title}</h3>
               </div>
               <div className="flex flex-wrap gap-2.5">
                 {cat.skills.map((skill, si) => (
                   <RevealSection key={skill} delay={ci * 100 + si * 50}>
-                    <span className="px-4 py-2 text-sm rounded-xl glass-card text-foreground font-medium hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default inline-block">
+                    <span className="px-4 py-2 text-sm rounded-xl glass-card border border-black/10 text-foreground font-medium hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default inline-block hover:bg-gray-100">
                       {skill}
                     </span>
                   </RevealSection>

@@ -33,7 +33,7 @@ export default function ContactSection() {
     <section id="contact" className="section-padding">
       <div className="max-w-4xl mx-auto">
         <RevealSection>
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">
+          <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700 mb-4">
             Contact
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-foreground">
@@ -55,7 +55,7 @@ export default function ContactSection() {
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 required
-                className="w-full px-5 py-3.5 rounded-xl glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
+                className="w-full px-5 py-3.5 rounded-xl glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-black/30 transition-all"
               />
 
               <input
@@ -64,7 +64,7 @@ export default function ContactSection() {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 required
-                className="w-full px-5 py-3.5 rounded-xl glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
+                className="w-full px-5 py-3.5 rounded-xl glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-black/30 transition-all"
               />
 
               <textarea
@@ -73,13 +73,13 @@ export default function ContactSection() {
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 required
-                className="w-full px-5 py-3.5 rounded-xl glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all resize-none"
+                className="w-full px-5 py-3.5 rounded-xl glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-black/30 transition-all resize-none"
               />
 
               <button
                 type="submit"
                 disabled={!form.name || !form.email || !form.message}
-                className="flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-black to-gray-800 text-white font-medium text-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Send size={16} />
                 Send Message
@@ -101,7 +101,7 @@ export default function ContactSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    className="w-12 h-12 rounded-xl glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                    className="w-12 h-12 rounded-xl glass-card border border-black/10 flex items-center justify-center text-muted-foreground hover:text-black hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover:bg-gray-100"
                   >
                     <s.icon size={20} />
                   </a>

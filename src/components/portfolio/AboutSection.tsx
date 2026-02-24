@@ -8,7 +8,7 @@ export default function AboutSection() {
         <RevealSection>
           <div className="flex items-center gap-3 mb-8">
            
-            <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary">About Me</p>
+            <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700">About Me</p>
           </div>
         </RevealSection>
 

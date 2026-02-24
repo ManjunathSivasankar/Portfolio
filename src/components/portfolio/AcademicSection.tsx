@@ -30,8 +30,8 @@ export default function AcademicSection() {
       <div className="max-w-4xl mx-auto">
         <RevealSection>
           <div className="flex items-center gap-3 mb-4">
-            <GraduationCap size={20} className="text-primary" />
-            <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary">Education</p>
+            <GraduationCap size={20} className="text-black" />
+            <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700">Education</p>
           </div>
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-16 text-foreground">
             Academic background.
@@ -40,7 +40,7 @@ export default function AcademicSection() {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-border" />
+          <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-black/30 via-gray-600/20 to-gray-300/20" />
 
           <div className="space-y-12">
             {education.map((edu, i) => (
@@ -48,13 +48,13 @@ export default function AcademicSection() {
                 <div className="flex gap-6 md:gap-8">
                   {/* Dot */}
                   <div className="relative flex-shrink-0">
-                    <div className="w-8 md:w-12 h-8 md:h-12 rounded-full glass-card flex items-center justify-center border-2 border-primary/20">
-                      <div className="w-2.5 h-2.5 rounded-full bg-primary" />
+                    <div className="w-8 md:w-12 h-8 md:h-12 rounded-full glass-card flex items-center justify-center border-2 border-black/20">
+                      <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-black to-gray-700" />
                     </div>
                   </div>
 
                   <div className="pb-2">
-                    <span className="text-xs font-medium text-primary tracking-wider">{edu.year}</span>
+                    <span className="text-xs font-medium bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700 tracking-wider">{edu.year}</span>
                     <h3 className="font-display text-lg font-semibold text-foreground mt-1">{edu.title}</h3>
                     <p className="text-sm text-muted-foreground mt-0.5">{edu.institution}</p>
                     <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{edu.description}</p>

@@ -15,7 +15,7 @@ export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center section-padding pt-32">
       {/* Animated gradient bg */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary to-background animate-gradient" />
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-100 to-white animate-gradient" />
 
       <div className="relative z-10 text-center max-w-3xl mx-auto">
         {/* Profile Image */}
@@ -27,11 +27,11 @@ export default function HeroSection() {
           }}
         >
           <div className="relative inline-block">
-            {/* Glow ring */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/40 via-accent/30 to-primary/40 blur-xl animate-pulse" />
+            {/* Glow ring - Black to Grey gradient */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-black/30 via-gray-600/20 to-black/30 blur-xl animate-pulse" />
             {/* Profile container */}
-            <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-br from-primary/50 via-accent/40 to-primary/50">
-              <div className="w-full h-full rounded-full overflow-hidden glass-card border-2 border-white/20">
+            <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-br from-black/40 via-gray-700/30 to-black/40">
+              <div className="w-full h-full rounded-full overflow-hidden glass-card border-2 border-black/10">
                 {/* Placeholder avatar - replace src with your image */}
                 <img
                   src="https://i.postimg.cc/Sxf3NGNj/Whats-App-Image-2026-02-08-at-19-07-15.jpg"
@@ -84,14 +84,14 @@ export default function HeroSection() {
         >
           <button
             onClick={() => scrollTo("projects")}
-            className="group flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm shadow-lg hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 hover:scale-105"
+            className="group flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-black to-gray-800 text-white font-medium text-sm shadow-lg hover:shadow-2xl hover:shadow-black/40 transition-all duration-300 hover:scale-105"
           >
             <Briefcase size={16} className="group-hover:rotate-12 transition-transform" />
             View Work
           </button>
           <button
             onClick={() => scrollTo("contact")}
-            className="group flex items-center gap-2 px-8 py-3.5 rounded-full glass-card text-foreground font-medium text-sm hover:shadow-lg hover:bg-white/20 transition-all duration-300 hover:scale-105"
+            className="group flex items-center gap-2 px-8 py-3.5 rounded-full glass-card text-foreground font-medium text-sm border-2 border-black/20 hover:shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105"
           >
             <Mail size={16} className="group-hover:scale-110 transition-transform" />
             Contact Me

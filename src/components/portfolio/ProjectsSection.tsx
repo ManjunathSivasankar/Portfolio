@@ -29,7 +29,7 @@ export default function ProjectsSection() {
     <section id="projects" className="section-padding">
       <div className="max-w-6xl mx-auto">
         <RevealSection>
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">
+          <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700 mb-4">
             Projects
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-16 text-foreground">
@@ -81,7 +81,7 @@ export default function ProjectsSection() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 text-xs rounded-full bg-primary/8 text-primary font-medium"
+                      className="px-3 py-1 text-xs rounded-full bg-gradient-to-r from-black/5 to-gray-700/5 border border-black/10 text-foreground font-medium"
                     >
                       {tag}
                     </span>

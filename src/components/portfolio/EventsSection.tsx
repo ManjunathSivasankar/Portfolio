@@ -54,11 +54,11 @@ const events: EventItem[] = [
 ];
 
 const typeColors: Record<EventType, string> = {
-  hackathon: "bg-primary/20 text-primary",
-  workshop: "bg-accent/30 text-accent-foreground",
-  certification: "bg-green-500/20 text-green-600",
-  event: "bg-violet-500/20 text-violet-600",
-  symposium: "bg-blue-500/20 text-blue-600",
+  hackathon: "bg-black/10 text-black border border-black/20",
+  workshop: "bg-gray-600/10 text-gray-700 border border-gray-600/20",
+  certification: "bg-gray-500/10 text-gray-700 border border-gray-500/20",
+  event: "bg-gray-400/10 text-gray-700 border border-gray-400/20",
+  symposium: "bg-gray-700/10 text-gray-800 border border-gray-700/20",
 };
 
 export default function EventsSection() {
@@ -68,8 +68,8 @@ export default function EventsSection() {
         {/* Header */}
         <RevealSection>
           <div className="flex items-center gap-3 mb-4">
-            <Trophy size={20} className="text-primary" />
-            <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary">
+            <Trophy size={20} className="text-black" />
+            <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700">
               Events & Participation
             </p>
           </div>
