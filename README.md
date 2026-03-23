@@ -23,39 +23,6 @@ Passionate about building things that matter. Currently a pre-final year student
 *   **Portfolio Website:** Visually immersive personal portfolio built with React and Tailwind CSS.
 *   **UrbanDos Store:** E-commerce platform for a streetwear brand featuring bold designs.
 
-### Project Structure
-```text
-src/
-├── components/
-│   ├── portfolio/    # core section components
-│   └── ui/           # reusable shadcn components
-├── hooks/            # scroll reveal & active section logic
-├── pages/            # main entry point (Index.tsx)
-└── lib/              # utility functions
-```
-
-### Setup
-
-Install dependencies:
-```powershell
-bun install
-```
-
-Start development server:
-```powershell
-bun run dev
-```
-
-Build for production:
-```powershell
-bun run build
-```
-
-Run tests:
-```powershell
-bun run test
-```
-
 ### Participation
 *   **Symposium:** Kuppam Engineering College (October 2025)
 *   **Sponsorship:** Team Assuvar at Rhythm '25 (August 2025)
