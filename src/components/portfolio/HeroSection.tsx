@@ -1,4 +1,4 @@
-import { ArrowDown, Briefcase, Mail } from "lucide-react";
+import { ArrowDown, Briefcase, FileText, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function HeroSection() {
@@ -96,6 +96,15 @@ export default function HeroSection() {
             <Mail size={16} className="group-hover:scale-110 transition-transform" />
             Contact Me
           </button>
+          <a
+            href="/Manjunath_S_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 px-8 py-3.5 rounded-full glass-card text-foreground font-medium text-sm border-2 border-black/20 hover:shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105"
+          >
+            <FileText size={16} className="group-hover:scale-110 transition-transform" />
+            Resume
+          </a>
         </div>
 
         <button
