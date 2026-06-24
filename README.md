@@ -1,6 +1,6 @@
 # Manjunath
 
-Frontend Developer · Data Analyst · Entrepreneur.
+Frontend Developer · Data Analyst · Entrepreneur..
 B.E Computer Science Student (2023 - 2027)
 
 ---
