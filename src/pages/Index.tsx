@@ -3,8 +3,9 @@ import FloatingShapes from "@/components/portfolio/FloatingShapes";
 import HeroSection from "@/components/portfolio/HeroSection";
 import AboutSection from "@/components/portfolio/AboutSection";
 import WhatIDoSection from "@/components/portfolio/WhatIDoSection";
-import SkillsSection from "@/components/portfolio/SkillsSection";
+import ExperienceSection from "@/components/portfolio/ExperienceSection";
 import ProjectsSection from "@/components/portfolio/ProjectsSection";
+import SkillsSection from "@/components/portfolio/SkillsSection";
 import AcademicSection from "@/components/portfolio/AcademicSection";
 import EventsSection from "@/components/portfolio/EventsSection";
 import ContactSection from "@/components/portfolio/ContactSection";
@@ -18,8 +19,9 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <WhatIDoSection />
-        <SkillsSection />
+        <ExperienceSection />
         <ProjectsSection />
+        <SkillsSection />
         <AcademicSection />
         <EventsSection />
         <ContactSection />
