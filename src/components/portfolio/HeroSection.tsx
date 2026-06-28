@@ -72,7 +72,7 @@ export default function HeroSection() {
             transform: loaded ? "translateY(0)" : "translateY(20px)",
           }}
         >
-          Full Stack Developer &bull; Founder of UrbanDos
+          Full Stack Developer &bull; Entrepreneur
         </p>
 
         <div

@@ -3,7 +3,7 @@ import { Code, Shirt } from "lucide-react";
 
 const highlights = [
   "Full-Stack Developer",
-  "Founder – UrbanDos",
+  "Entrepreneur",
   "Final Year CSE",
   "React",
   "Next.js",
@@ -38,7 +38,7 @@ export default function AboutSection() {
                   Currently working as a Full-Stack Developer Intern at Till Cloud, contributing to a cloud-based restaurant POS system.
                 </p>
                 <p>
-                  Outside development, I'm the founder of <span className="text-foreground font-semibold">UrbanDos</span>, where I combine technology, branding, and business to build a modern streetwear brand.
+                  Outside development, I am the entrepreneur behind <span className="text-foreground font-semibold">UrbanDos</span>, where I combine technology, branding, and business to build a modern streetwear brand.
                 </p>
               </div>
             </RevealSection>
@@ -90,7 +90,7 @@ export default function AboutSection() {
               </div>
             </RevealSection>
 
-            {/* Card 2: Founder – UrbanDos */}
+            {/* Card 2: Entrepreneur – UrbanDos */}
             <RevealSection delay={250}>
               <div className="glass-card rounded-2xl p-6 border-2 border-black/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 group">
                 <div className="flex items-start gap-4">
@@ -99,7 +99,7 @@ export default function AboutSection() {
                   </div>
                   <div className="space-y-2 flex-grow text-left">
                     <h3 className="font-display text-lg font-bold text-foreground">
-                      Founder – UrbanDos
+                      Entrepreneur – UrbanDos
                     </h3>
                     <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
                       Building and growing a premium streetwear brand while managing branding, product strategy, and e-commerce operations.
