@@ -14,7 +14,7 @@ const projects = [
     title: "UrbanDos Store",
     description:
       "E-commerce platform for a streetwear brand featuring bold designs and a seamless shopping experience.",
-    tags: ["React", "E-Commerce", "UI/UX"],
+    tags: ["React", "MongoDB", "E-Commerce"],
     github: "https://github.com/ManjunathSivasankar",
     live: "https://urbandos.store/",
   },

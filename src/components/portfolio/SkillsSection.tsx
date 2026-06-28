@@ -1,5 +1,5 @@
 import RevealSection from "./RevealSection";
-import { Code, Server, Wrench } from "lucide-react";
+import { Code, Server, Database, Wrench } from "lucide-react";
 
 const categories = [
   {
@@ -10,7 +10,12 @@ const categories = [
   {
     title: "Backend",
     icon: Server,
-    skills: ["Express.js", "Node.js", "REST APIs", "PostgreSQL", "Prisma", "Authentication", "RBAC"],
+    skills: ["Express.js", "Node.js", "REST APIs", "Prisma", "Authentication", "RBAC"],
+  },
+  {
+    title: "Database",
+    icon: Database,
+    skills: ["PostgreSQL", "MongoDB"],
   },
   {
     title: "Tools",
@@ -30,7 +35,7 @@ export default function SkillsSection() {
           </h2>
         </RevealSection>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((cat, ci) => (
             <RevealSection key={cat.title} delay={ci * 100}>
               <div className="mb-4 flex items-center gap-3">
