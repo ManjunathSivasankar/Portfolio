@@ -64,7 +64,7 @@ export default function ExperienceSection() {
             <Briefcase size={20} className="text-black" />
             <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700">Experience</p>
           </div>
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-16 text-foreground">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-10 text-foreground">
             Work history.
           </h2>
         </RevealSection>
@@ -73,14 +73,14 @@ export default function ExperienceSection() {
           {/* Timeline line */}
           <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-black/30 via-gray-600/20 to-gray-300/20" />
 
-          <div className="space-y-12">
+          <div className="space-y-8">
             {experiences.map((exp, i) => (
               <RevealSection key={i} delay={i * 150}>
-                <div className="flex gap-6 md:gap-8">
+                <div className="flex gap-4 md:gap-6">
                   {/* Dot */}
                   <div className="relative flex-shrink-0">
-                    <div className="w-8 md:w-12 h-8 md:h-12 rounded-full glass-card flex items-center justify-center border-2 border-black/20">
-                      <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-black to-gray-700" />
+                    <div className="w-8 md:w-10 h-8 md:h-10 rounded-full glass-card flex items-center justify-center border-2 border-black/20">
+                      <div className="w-2 h-2 rounded-full bg-gradient-to-r from-black to-gray-700" />
                     </div>
                   </div>
 

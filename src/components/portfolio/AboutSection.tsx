@@ -19,23 +19,19 @@ export default function AboutSection() {
         </RevealSection>
 
         <RevealSection delay={200}>
-          <div className="glass-card rounded-2xl p-8 md:p-12">
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-                  Frontend developer & Entrepreneur. <br />
-                  B.E Pre-final year student. 
+          <div className="glass-card rounded-2xl p-6 md:p-8">
+            <p className="text-muted-foreground leading-relaxed text-base mb-4">
+              I'm a final-year Computer Science Engineering student passionate about building scalable web applications.
             </p>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-               I enjoy crafting clean, thoughtful digital experiences.
-               Currently learning full-stack development.. many challenge at a time. <br />
+            <p className="text-muted-foreground leading-relaxed text-base mb-4">
+              Currently working as a Full Stack Developer Intern at Till Cloud, where I contribute to a cloud-based restaurant POS system.
             </p>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-              I explore data analytics to uncover insights, and I build <span className="text-foreground font-medium">UrbanDos</span>, 
-              a streetwear brand shaped by urban culture and bold.
+            <p className="text-muted-foreground leading-relaxed text-base mb-4">
+              Outside development, I founded <span className="text-foreground font-semibold">UrbanDos</span>, a streetwear brand focused on premium oversized apparel.
             </p>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              Honest about where I am. <br />
-              Hungry for what’s ahead.<br />
-              Building everything with intention.</p>
+            <p className="text-muted-foreground leading-relaxed text-base">
+              I enjoy solving real-world problems through clean, scalable software and continuously improving my engineering skills.
+            </p>
           </div>
         </RevealSection>
       </div>

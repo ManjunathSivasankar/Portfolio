@@ -1,21 +1,21 @@
 import RevealSection from "./RevealSection";
-import { Code, Database, Wrench } from "lucide-react";
+import { Code, Server, Wrench } from "lucide-react";
 
 const categories = [
   {
     title: "Frontend",
     icon: Code,
-    skills: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Responsive Design", "Git"],
+    skills: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
   },
   {
-    title: "Data & Analytics",
-    icon: Database,
-    skills: ["Python", "SQL", "Excel", "Power BI", "Data Visualization", "Pandas", "Statistical Analysis"],
+    title: "Backend",
+    icon: Server,
+    skills: ["Express.js", "Node.js", "REST APIs", "PostgreSQL", "Prisma", "Authentication", "RBAC"],
   },
   {
-    title: "Tools & Platforms",
+    title: "Tools",
     icon: Wrench,
-    skills: ["VS Code", "GitHub", "Figma", "npm"],
+    skills: ["Git", "GitHub", "VS Code", "Postman", "Docker", "VPS Deployment"],
   },
 ];
 
@@ -25,7 +25,7 @@ export default function SkillsSection() {
       <div className="max-w-6xl mx-auto">
         <RevealSection>
           <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700 mb-4">Skills</p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-16 text-foreground">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-10 text-foreground">
             Tools of the trade.
           </h2>
         </RevealSection>
@@ -33,14 +33,14 @@ export default function SkillsSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {categories.map((cat, ci) => (
             <RevealSection key={cat.title} delay={ci * 100}>
-              <div className="mb-6 flex items-center gap-3">
+              <div className="mb-4 flex items-center gap-3">
                 <cat.icon size={18} className="text-black" />
-                <h3 className="font-display text-lg font-semibold text-foreground">{cat.title}</h3>
+                <h3 className="font-display text-base font-semibold text-foreground">{cat.title}</h3>
               </div>
-              <div className="flex flex-wrap gap-2.5">
+              <div className="flex flex-wrap gap-2">
                 {cat.skills.map((skill, si) => (
                   <RevealSection key={skill} delay={ci * 100 + si * 50}>
-                    <span className="px-4 py-2 text-sm rounded-xl glass-card border border-black/10 text-foreground font-medium hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default inline-block hover:bg-gray-100">
+                    <span className="px-3 py-1.5 text-xs rounded-lg glass-card border border-black/10 text-foreground font-medium hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default inline-block hover:bg-gray-100">
                       {skill}
                     </span>
                   </RevealSection>

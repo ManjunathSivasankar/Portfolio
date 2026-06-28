@@ -36,26 +36,26 @@ export default function ContactSection() {
           <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700 mb-4">
             Contact
           </p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-foreground">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Let's connect.
           </h2>
-          <p className="text-muted-foreground mb-12 max-w-lg">
+          <p className="text-muted-foreground mb-6 max-w-lg">
             Have a project in mind, want to collaborate, or just say hi? I'd love
             to hear from you.
           </p>
         </RevealSection>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Contact Form */}
           <RevealSection delay={100}>
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="text"
                 placeholder="Your Name"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 required
-                className="w-full px-5 py-3.5 rounded-xl glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-black/30 transition-all"
+                className="w-full px-4 py-2.5 rounded-lg glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-black/30 transition-all border border-black/5"
               />
 
               <input
@@ -64,24 +64,24 @@ export default function ContactSection() {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 required
-                className="w-full px-5 py-3.5 rounded-xl glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-black/30 transition-all"
+                className="w-full px-4 py-2.5 rounded-lg glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-black/30 transition-all border border-black/5"
               />
 
               <textarea
                 placeholder="Your Message"
-                rows={5}
+                rows={3}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 required
-                className="w-full px-5 py-3.5 rounded-xl glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-black/30 transition-all resize-none"
+                className="w-full px-4 py-2.5 rounded-lg glass-card text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-black/30 transition-all resize-none border border-black/5"
               />
 
               <button
                 type="submit"
                 disabled={!form.name || !form.email || !form.message}
-                className="flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-black to-gray-800 text-white font-medium text-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-black to-gray-800 text-white font-medium text-xs shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <Send size={16} />
+                <Send size={14} />
                 Send Message
               </button>
             </form>
@@ -89,11 +89,11 @@ export default function ContactSection() {
 
           {/* Social Links */}
           <RevealSection delay={200}>
-            <div className="flex flex-col justify-center">
-              <p className="text-sm font-medium text-muted-foreground mb-6">
+            <div className="flex flex-col justify-center md:pl-10">
+              <p className="text-sm font-medium text-muted-foreground mb-4">
                 Or find me on
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-3">
                 {socials.map((s) => (
                   <a
                     key={s.label}
@@ -101,9 +101,9 @@ export default function ContactSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    className="w-12 h-12 rounded-xl glass-card border border-black/10 flex items-center justify-center text-muted-foreground hover:text-black hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover:bg-gray-100"
+                    className="w-10 h-10 rounded-lg glass-card border border-black/10 flex items-center justify-center text-muted-foreground hover:text-black hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover:bg-gray-100"
                   >
-                    <s.icon size={20} />
+                    <s.icon size={16} />
                   </a>
                 ))}
               </div>
@@ -114,8 +114,8 @@ export default function ContactSection() {
 
       {/* Footer */}
       <RevealSection delay={300}>
-        <footer className="mt-24 pt-8 border-t border-border text-center">
-          <p className="font-display text-sm text-muted-foreground">
+        <footer className="mt-12 pt-6 border-t border-border text-center">
+          <p className="font-display text-xs text-muted-foreground">
             Designed & built with intention &bull;{" "}
             <span className="text-foreground font-medium">
               Manjunath S

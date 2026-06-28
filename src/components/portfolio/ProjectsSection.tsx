@@ -32,7 +32,7 @@ export default function ProjectsSection() {
           <p className="text-sm font-medium tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700 mb-4">
             Projects
           </p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-16 text-foreground">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-10 text-foreground">
             Things I've built.
           </h2>
         </RevealSection>
@@ -40,11 +40,11 @@ export default function ProjectsSection() {
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, i) => (
             <RevealSection key={project.title} delay={i * 120}>
-              <div className="glass-card rounded-2xl p-8 h-full group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+              <div className="glass-card rounded-2xl p-6 h-full group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
                 
                 {/* Header */}
-                <div className="flex items-start justify-between mb-4">
-                  <h3 className="font-display text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
 
@@ -55,7 +55,7 @@ export default function ProjectsSection() {
                         className="text-muted-foreground hover:text-foreground transition-colors"
                         aria-label="GitHub Repository"
                       >
-                        <Github size={18} />
+                        <Github size={16} />
                       </button>
                     )}
 
@@ -65,23 +65,23 @@ export default function ProjectsSection() {
                         className="text-muted-foreground hover:text-foreground transition-colors"
                         aria-label="Live Project"
                       >
-                        <ExternalLink size={18} />
+                        <ExternalLink size={16} />
                       </button>
                     )}
                   </div>
                 </div>
 
                 {/* Description */}
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                <p className="text-muted-foreground text-xs leading-relaxed mb-4">
                   {project.description}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 text-xs rounded-full bg-gradient-to-r from-black/5 to-gray-700/5 border border-black/10 text-foreground font-medium"
+                      className="px-2.5 py-0.5 text-[10px] rounded-full bg-gradient-to-r from-black/5 to-gray-700/5 border border-black/10 text-foreground font-medium"
                     >
                       {tag}
                     </span>
